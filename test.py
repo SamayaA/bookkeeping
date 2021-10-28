@@ -1,5 +1,5 @@
 import unittest
-from bookkeeping import bookkeeping
+from bookkeeping import Bookkeeping
 
 class TestBookkeepingSystem():
     pass

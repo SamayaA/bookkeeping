@@ -1,4 +1,4 @@
-class bookkeeping():
+class Bookkeeping():
   def __init__(self, directories, documents):
     self.directories = directories
     self.documents = documents

@@ -1,4 +1,4 @@
-from bookkeeping import bookkeeping
+from bookkeeping import Bookkeeping
 
 documents = [
     {
@@ -26,7 +26,7 @@ directories = {
 
 
 if __name__ == '__main__':
-    organization = bookkeeping(directories, documents)
+    organization = Bookkeeping(directories, documents)
     while True:
         menu_annotation = f"\nEnter: \n'p' to find the name of person \
             \n's' to find the shelf where is document \
