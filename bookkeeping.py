@@ -3,16 +3,16 @@ class Bookkeeping():
     self.directories = directories
     self.documents = documents
 
-  def find_document_owner(self, number):
+  def find_document_owner(self, number:str):
     name = ''
     for doc in self.documents:
       if (doc["number"] == number):
         name = doc["name"]
         return name
     if (name == ''):
-      return 'The number of document does not exist ' 
+      return 'The number of document does not exist' 
 
-  def find_shelf(self, number) :
+  def find_shelf(self, number:str) :
     for shelf , numbers in self.directories.items():
       shelf_num = ''
       if (number in numbers):
